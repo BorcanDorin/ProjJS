@@ -79,15 +79,10 @@ function sendForm() {
   var email = form.elements['email'].value;
   var psw = form.elements['psw'].value;
   var pswConf = form.elements['psw-repeat'].value;
-  if(checkEmail(email)){
-    console.log(email);
+  if(email === null || psw === null || pswConf == null || checkEmail(email) || checkPsw(psw) || psw != pswConf){
+    //alerta
   }
-  if(checkPsw(psw)){
-    console.log(psw);
-  }
-  if(psw != pswConf){
-    console.log('error');
-  }
+  //success
 }
 
 function checkEmail(text) {
