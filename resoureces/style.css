@@ -1,0 +1,272 @@
+.base{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h2
+{
+  text-align:center;
+  color:white;
+}
+.resp-container
+{
+  position:fixed;
+  top: 13em;
+  left:2%;
+  height:65%;
+  width:75%;
+}
+.resp-figure
+{
+  position:absolute;
+  top:28%;
+  left:75%;
+  width:25%;
+  text-align:center;
+    perspective: 5%;
+}
+.responsive
+{
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+#portret
+{
+    transition: transform 1s 1s;
+}
+#portret:hover
+{
+    transform:scale(0.8, 0.8);
+}
+#smileAnim
+{
+    animation-name:smile;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+#titlu
+{
+  text-align:center;
+}
+#Meniu
+{
+    text-align:center;
+  margin:0em;
+  padding:0em;
+  list-style-type:none;
+}
+#Meniu>li
+{
+  display: inline-block;
+  vertical-align: top;
+}
+#Meniu li ul
+{
+  position: fixed;
+  visibility: hidden;
+  list-style-type: none;
+  padding: 0em;
+  margin: 0em;
+}
+#Meniu li:hover ul
+{
+  visibility:visible;
+}
+#Meniu li a
+{
+  height: 35px;
+  width: 160px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:1.25em;
+  color: white;
+  line-height: 1.875em;
+  text-align: center;
+  border: 1px solid white;
+  background-color: black;
+    z-index: 1;
+}
+#Meniu li a:hover 
+{
+  background-color:rgb(161,30,36);
+}
+.normal a
+{
+    text-decoration: none;
+    color:white;
+}
+.normal ol li
+{
+  list-style-type:upper-roman;
+  border:none;
+  color:white;
+  font-size:1.25em; 
+}
+.normal ul li
+{
+  border:none;
+  color:white;
+  font-size:1.25em; 
+}
+.formular ol li
+{
+  margin-left:5em;
+  border:none;
+  color:white;
+  font-size:1.25em; 
+}
+p
+{
+  padding-left:2em;
+  color:white;
+  font-size:1.5em; 
+  font-family:"Times New Roman";
+}
+tab
+{
+  padding-left:2em;
+}
+.galerie
+{
+  display:inline-block;
+  text-align:center;
+  width:25%;
+  height:auto;
+}
+.galerie img
+{
+  width:100%;
+  height:auto;
+  border-color:"white";
+  margin:5px;
+}
+.textin
+{
+  size:60;
+}
+.Buton
+{
+  height: 30px;
+  width: 150px;
+  background-color: black; 
+  border: 1px solid white; 
+  color: white;
+  text-align: center;
+  text-decoration: none; 
+  font-size:1em;
+  display:inline-block;
+}
+.Buton:hover
+{
+  background-color:rgb(161,30,36);
+}
+.mesaje
+{
+  padding:0.8em;
+}
+td:nth-of-type(2n+1)
+{
+  padding:3.5em;
+}
+@media only screen and (max-width:900px)
+{
+  figure
+  {
+    width:100%;
+    display:block;
+  }
+  figure img
+  {
+    width:100%;
+    display:block;
+  }
+}
+#homeTexted
+{
+  position: absolute;
+    z-index: -1;
+    top: 25%;
+  left: 3.5%;
+    height: 45%;
+  width: 73%;
+}
+.texted
+{
+  position: absolute;
+    z-index: -1;
+    top: 25%;
+  left: 3.5%;
+    height: 45%;
+  width: 87%;
+}
+@keyframes smile
+{
+    0%
+    {
+        transform: rotateY(0deg);
+    }
+    50%
+    {
+        transform: rotateY(180deg);
+    }
+    100%
+    {
+        transform: rotateY(0deg);
+    }
+}
+.flex-box
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.flex-box > img
+{
+    transform: scale(0.5, 0.8);
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#slider
+{
+    width: 25%;
+    height: auto;
+}
+#dropzone
+{
+    position: absolute;
+    top: 140%;
+    left: 60%;
+    width: 25%;
+    height: 70%;
+    border: solid;
+    border-color: white;
+}
+.container
+{
+    max-width: 50%;
+    max-height: auto;
+}
+
+.title_span_cls{
+  color:white;
+  font-size:2em
+}
+
+.subtitle_span_cls{
+  color:white;
+  font-size:1.25em
+
+}
+
+.midtitle_span_cls{
+  color:white;
+  font-size:1.5em
+
+}
